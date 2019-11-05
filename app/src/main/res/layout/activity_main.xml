@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="17dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="托票"/>
+
+        <com.tm.chart.vote.VoteChartView
+            android:id="@+id/barchartview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey"
+        android:layout_marginTop="17dp"/>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重置"/>
+
+</LinearLayout>
